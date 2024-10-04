@@ -1,42 +1,340 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@200;300;400;700&display=swap');
+.button-h1 {
+  display: flex;
+  gap: 10px;
+}
+.crad-info {
+  text-align: center;
+  width: 940px;
+  /*border: 1px solid red;*/
+}
+.crad-info h3 {
+  font-size: 3rem;
+  font-family: "Niramit", sans-serif;
+  font-weight: bold;
+}
+.crad-info p {
+  font-size: 18px;
+  font-family: "Niramit", sans-serif;
+}
+.card-cen {
+  justify-content: center;
+  display: flex;
+}
+.container-1 {
+  max-width: 1540px;
+  margin: 0 auto;
+  border: none;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  grid-gap: 1px;
+  margin: 2rem 0;
+}
+.card-grid-info {
+  width: 500px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  justify-content: center;
+  border-radius: 20px;
+}
+.card-grid-info h3 {
+  padding-top: 2rem;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+  font-family: "Niramit", sans-serif;
+}
+.card-grid-info p {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Niramit", sans-serif;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.card-grid-info a {
+font-size: 20px;
+text-align: center;
+text-decoration: none;
+color: #2c2c2c;
+transition: 0.3s;
+font-family: "Niramit", sans-serif;
+}
+.card-grid-info a:hover {
+  color: #979797;
+}
+.btn-cardd {
+  text-align: center;
+}
+footer {
+  background-color: #979797;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+}
+footer a {
+  color: #ececec;
+  text-decoration: none;
+  transition: 0.2s;
+}
+footer a:hover {
+  color: #000000;
+}
+.container-1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.about-me {
+  margin: 2rem 0;
+  text-align: center;
+  width: 900px;
+}
+.about-me h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  font-family: "Niramit", sans-serif;
+}
+.about-me p {
+  font-size: 18px;
+  font-family: "Niramit", sans-serif;
+  color: #282828;
+}
+.about-cent {
+  justify-content: center;
+  display: flex;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.main-grid-content {
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+  width: 300px;
+  border: 2px solid rgb(86, 86, 86);
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 10px 9px 12px -1px rgba(0,0,0,0.65);
+}
+.main-grid-content:hover {
+ border: none;
+ background-color: #bfbfbf;
+}
+.main-grid-content img {
+  width: 150px;
+}
+.main-grid-content h3 {
+  font-family: "Niramit", sans-serif;
+  font-size: 22px;
+}
+.main-grid-content p {
+  font-family: "Niramit", sans-serif;
+}
+.con-cen{
+  display: flex;
+  justify-content: center;
+}
+.contect {
+  margin: 3rem 0;
+  text-align: center;
+  box-shadow: 0px 15px 18px 8px rgba(0,0,0,0.75);
+  padding: 3rem 0;
+  width: 630px;
+  border-radius: 20px;
+}
+.contect h2{
+  font-family: "Niramit", sans-serif;
+}
+.con-name {
+  padding: 2rem 0;
+}
+.con-name h3{
+  font-family: "Niramit", sans-serif;
+  font-size: 24px;
+}
+.con-name input {
+  font-family: "Niramit", sans-serif;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #c7c7c7;
+}
+.comment {
+  font-family: "Niramit", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+.comment textarea {
+  font-family: "Niramit", sans-serif;
+  width: 300px;
+  height: 80px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #c7c7c7;
+}
+.boxcheck {
+  font-family: "Niramit", sans-serif;
+  padding-top: .7rem;
+  font-family: "Niramit", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.contect button {
+  width: 160px;
+  height: 50px;
+  border: 2px solid rgb(0, 106, 0);
+  background: none;
+  border-radius: 15px;
+  color: rgb(0, 106, 0);
+  font-size: 16px;
+  transition: 0.4s;
+}
+.contect button:hover {
+  background-color: rgb(0, 106, 0);
+  color: #ffffff;
+  border: none;
+}
+.service {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.service-info {
+  padding: 3rem 0;
+  text-align: center;
+  /*border: 1px solid red;*/
+  width: 780px;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.service-info span {
+  font-size: 48px;
+  font-family: "Niramit", sans-serif;
+  font-weight: bold;
+  color: #363636;
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+#sertext {
+  color: #686868;
 }
-
-a {
-  color: inherit;
+.service-info p {
+  font-family: "Niramit", sans-serif;
+  color: #2e2e2e;
+  font-size: 16px;
+}
+.ser-cen {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.ser-grid {
+  grid-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.service-grid {
+  width: 460px;
+  text-align: center;
+  box-shadow: 0px 15px 18px 8px rgba(0,0,0,0.75);
+  padding: 2rem 0;
+  margin-bottom:2rem ;
+  border-radius: 20px;
+}
+.service-grid img {
+  width: 150px;
+}
+.service-grid h3 {
+  padding-top: 2rem;
+  font-family: "Niramit", sans-serif;
+  font-size: 24px;
+  color: #424242;
+}
+.service-grid p {
+  width: 450px;
+  font-size: 14px;
+  font-family: "Niramit", sans-serif;
+  padding: 0 1rem;
+}
+.service-grid a {
+  padding-top: 2rem;
+  text-decoration: none;
+  color: #282828;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.service-grid a:hover {
+  color: #7e7e7e;
+}
+.login-card {
+  border: 3px solid rgb(58, 58, 58);
+  border-radius: 15px;
+  text-align: center;
+  width: 540px;
+  height: 370px;
+  margin-left: 23rem;
+  margin-top: 18rem;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.log-cent {
+  display: flex;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+.sss h2 {
+  font-family: "Niramit", sans-serif;
+  padding: .4rem 0;
+  font-weight: bold;
+}
+.sss h4 {
+  font-family: "Niramit", sans-serif;
+  padding: .4rem 0;
+  font-weight: bold;
+}
+.regiss {
+  font-family: "Niramit", sans-serif;
+  padding: .7rem 0;
   text-decoration: none;
 }
+.sss button {
+  margin:1rem 0;
+  font-family: "Niramit", sans-serif;
+  padding: .4rem 0; 
+  font-weight: bold;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: green;
+  border: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.sss button:hover {
+  background:none;
+  border: 2px solid green;
+  color: green;
+}
+.sss input {
+  font-family: "Niramit", sans-serif;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.form-body-2 {
+  font-family: "Niramit", sans-serif;
+}
+.ei87 {
+  padding-top: 1rem;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+}
+.form-buttomm {
+  padding-top: 1rem;
 }
